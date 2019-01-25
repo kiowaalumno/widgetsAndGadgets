@@ -1,59 +1,38 @@
 /* 
     * Author(s): Kiowa Alumno, Troy Peterson, Jo Lee White
     * Creation Date: 01/16/2019
-    * Date: 01/18/2019; 01/21/2019; 01/22/2019
+    * Date: 01/18/2019; 01/21/2019; 0
+    * 1/22/2019; 01/23/2019
     * Description: Stylesheet contains that the import information for all the Google Fonts to add 
     * fonts to the web pages.
 */
 
 /*  */
-body 
+body, html
 {
-  /* background-image: url('/images/foodm_05_edited.jpg');
-  background-position: center;
-  filter: blur(8px); */
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  height: 100%;
+  margin: 0;
 }
 
 /*  */
-.image
-{
-  background-image: url('/images/foodm_05_edited.jpg');
-  background-position: center;
-  filter: blur(8px);
-  -webkit-filter: blur(8px);
-    /* Full height */
-    height: 100%; 
-  
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-
-/*  */
-.bg-image
+.err-image
 {
   background-image: url('/images/283331-P6EPD6-923.jpg');
   background-size: 100%;
   background-position: right; 
   background-repeat: no-repeat; 
-  height: 500px;
-  width: 55%;
+  height: 100%; 
+  /* 500px; */
+  width: 100%;
+  /* 55%; */
   border-radius: 50%;
   margin-left: left; 
-  /* 24%; */
   margin-right: right;
-
-  /* 50%; */
-  /* justify-content: center; */
-  /* display: flex; */
 }
 
 /*  */
-a {
+a 
+{
   color: black;
 }
 
@@ -100,14 +79,19 @@ a {
   margin-left: -60px;
 }
 
-.tooltip:hover .tooltiptext {
+.tooltip:hover .tooltiptext 
+{
   visibility: visible;
 }
 
 .smallGad
 {
-  width: 175px;
-  height: 175px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  /* background: transparent; */
+/* note to self try ot add spin on hover . . .  */
+
 }
 
 .medGad
@@ -120,4 +104,49 @@ a {
 {
   width: 175px;
   height: 175px;
+}
+
+.about::first-letter
+{
+  float: left;
+    font-size: 45px;
+    line-height: 1;
+    font-weight: bold;
+    margin-right: 9px;
+}
+
+.bdy-image {
+  /* The image used */
+  background-image: url("/images/foodm_05_edited.jpg");
+  
+  /* Add the blur effect */
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+  
+  /* Full height */
+  height: 100%; 
+  
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Position text in the middle of the page/image */
+.bdy-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  font-family: 'Sofia';
+  font-size: 34px; 
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
 }
