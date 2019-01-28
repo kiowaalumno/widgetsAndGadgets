@@ -1,13 +1,13 @@
 /* 
     * Author(s): Kiowa Alumno, Troy Peterson, Jo Lee White
     * Creation Date: 01/16/2019
-    * Date: 01/18/2019; 01/21/2019; 0
-    * 1/22/2019; 01/23/2019
+    * Date: 01/18/2019; 01/21/2019; 01/22/2019; 01/23/2019
+    *       01/27/2019
     * Description: Stylesheet contains that the import information for all the Google Fonts to add 
     * fonts to the web pages.
 */
 
-/*  */
+/* HTML and Body styles */
 body, html
 {
   height: 100%;
@@ -84,6 +84,7 @@ a
   visibility: visible;
 }
 
+/* Product Page Image settings */
 .smallGad
 {
   width: 100px;
@@ -93,19 +94,22 @@ a
 /* note to self try ot add spin on hover . . .  */
 
 }
-
 .medGad
 {
-  width: 175px;
-  height: 175px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
 }
 
 .lrgGad
 {
-  width: 175px;
-  height: 175px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
 }
 
+/* adds a Drop Letter to the first letter 
+of each of the About Us Page paragraphs. */
 .about::first-letter
 {
   float: left;
@@ -149,4 +153,98 @@ a
   width: 80%;
   padding: 20px;
   text-align: center;
+}
+
+/* NavBar style -- Vertical */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 25%;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+li a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+li a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+/* ContactUs Page CSS */
+* {
+  box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
 }

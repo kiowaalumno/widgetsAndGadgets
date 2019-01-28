@@ -14,6 +14,11 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Welcome' });
 });
 
+/* Pulls up the index page of the website. */
+router.get('/index2', function(req, res, next) {
+  res.render('index2', { title: 'Welcome' });
+});
+
 /* Pulls up the About Us page of the website. */
 router.get('/aboutUs', function(req, res, next) {
   res.render('aboutUs', { title: 'About Our Companies' });
@@ -27,6 +32,11 @@ router.get('/contactUs', function(req, res, next) {
 // Pulls up the Products/Gadgets page of the website.
 router.get('/gadgets', function(req, res, next) {
   res.render('gadgets', { title: 'Our Products' });
+});
+
+// Pulls up the Products/Gadgets page of the website.
+router.get('/gadgets2', function(req, res, next) {
+  res.render('gadgets2', { title: 'Our Products' });
 });
 
 // Pulls up the Products/Gadgets page of the website.
