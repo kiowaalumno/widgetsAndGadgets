@@ -1,195 +1,209 @@
 /* 
     * Author(s): Kiowa Alumno, Troy Peterson, Jo Lee White
     * Creation Date: 01/16/2019
-    * Date: 01/18/2019; 01/21/2019; 01/22/2019; 01/23/2019
-    *       01/27/2019
+    * Date: 01/18/2019; 01/21/2019; 01/22/2019; 01/23/2019; 01/27/2019; 01/31/2019; 02/01/2019
     * Description: Stylesheet contains that the import information for all the Google Fonts to add 
     * fonts to the web pages.
 */
 
-/* HTML and Body styles */
-body, html
+/* controls the scrolling animation for the page */
+html
 {
-  height: 100%;
-  margin: 0;
+  scroll-behavior: smooth;
+}
+/* ====================END OF HTML SETTINGS========================== */
+
+body
+{
+  /* font-family: "Abel"; */
+  
 }
 
-/*  */
-.err-image
+/* adds a Drop Letter to the first letter 
+of each of the About Us Page paragraphs. */
+.about::first-letter {
+  float: left;
+  font-size: 45px;
+  line-height: 1;
+  font-weight: bold;
+  margin-right: 9px;
+  font-family: "Diplomata";
+}
+
+/* ====================END OF BODY SETTINGS========================== */
+
+.bg-image
+{
+  background-image: url("/images/5816.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* opacity: 8px; */
+}
+/* ====================END OF BACKGROUND IMAGE SETTINGS========================== */
+
+
+/*  Error Message Screen/Page Properties */
+.err-image 
 {
   background-image: url('/images/283331-P6EPD6-923.jpg');
-  background-size: 100%;
-  background-position: right; 
-  background-repeat: no-repeat; 
-  height: 100%; 
-  /* 500px; */
+  /* height: 465px;
+  width: 333px; */
+
   width: 100%;
-  /* 55%; */
-  border-radius: 50%;
-  margin-left: left; 
-  margin-right: right;
+  height: 100%;
+  size: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+  border-radius: 50%; */
+}
+/* ====================END OF 404 MESSAGE SETTINGS========================== */
+
+/*  Internal and External Link Set Up */a 
+{
+  color: gray; 
+  /* black; */
 }
 
-/*  */
-a 
+/* ====================END OF HTML SETTINGS========================== */
+
+/* NavBar styles -- Horizontal, Fixed and Sticky (stationary)*/
+.navbar 
 {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a 
+{
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover 
+{
+  background: #ddd;
   color: black;
 }
+
+/* LIST THAT CONTAINS LINKS and Settings for the Navigation Bar */
+ul 
+{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: navy;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+.active 
+{
+  background-color: grey;
+}
+
+/* ====================END OF Navigation Bar SETTINGS========================== */
+
 
 /* styles for the product page */
 .themed-grid-col {
   padding-top: 15px;
   padding-bottom: 15px;
-  background-color: rgba(86, 61, 124, .15);
   border: 1px solid rgba(86, 61, 124, .2);
 }
 
-/*  */
-.footer
+/* Product Section Image settings */
+.gadget 
 {
-  position: fixed;
-  left: 0;
-  bottom: 0;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;  
+}
+
+/* CREATES A PRODUCT INFORMATION CARD */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  max-height: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
   width: 100%;
-  text-align: center;
-   
+  font-size: 18px;
 }
 
-/*  */
-.tooltip {
-  position: relative;
-  display: inline-block;
-  border-bottom: 1px dotted black;
+.card button:hover {
+  opacity: 0.7;
 }
 
-.tooltip .tooltiptext {
-  visibility: hidden;
-  width: 140px;
-  background-color: black;
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-  padding: 5px 0;
-  
-  /* Position the tooltip */
-  position: absolute;
-  z-index: 1;
-  top: 100%;
-  left: 50%;
-  margin-left: -60px;
-}
+/* ====================END OF PRODUCT PAGE/SECTION SETTINGS========================== */
 
-.tooltip:hover .tooltiptext 
+/* About Us Page Settings */
+
+.photoID
 {
-  visibility: visible;
-}
-
-/* Product Page Image settings */
-.smallGad
-{
-  width: 100px;
-  height: 100px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
-  /* background: transparent; */
-/* note to self try ot add spin on hover . . .  */
-
-}
-.medGad
-{
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
+  /* float: left; */
 }
 
-.lrgGad
-{
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-}
 
-/* adds a Drop Letter to the first letter 
-of each of the About Us Page paragraphs. */
-.about::first-letter
-{
-  float: left;
-    font-size: 45px;
-    line-height: 1;
-    font-weight: bold;
-    margin-right: 9px;
-}
-
-.bdy-image {
-  /* The image used */
-  background-image: url("/images/foodm_05_edited.jpg");
-  
-  /* Add the blur effect */
-  filter: blur(8px);
-  -webkit-filter: blur(8px);
-  
-  /* Full height */
-  height: 100%; 
-  
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-/* Position text in the middle of the page/image */
-.bdy-text {
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
-  color: white;
-  font-weight: bold;
-  font-family: 'Sofia';
-  font-size: 34px; 
-  border: 3px solid #f1f1f1;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-  width: 80%;
-  padding: 20px;
-  text-align: center;
-}
-
-/* NavBar style -- Vertical */
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  width: 25%;
-  background-color: #f1f1f1;
-  position: fixed;
-  height: 100%;
-  overflow: auto;
-}
-
-li a {
-  display: block;
-  color: #000;
-  padding: 8px 16px;
-  text-decoration: none;
-}
-
-li a.active {
-  background-color: #4CAF50;
-  color: white;
-}
-
-li a:hover:not(.active) {
-  background-color: #555;
-  color: white;
-}
+/* ==============================END OF About US SETTINGS============================= */
 
 /* ContactUs Page CSS */
-* {
+* 
+{
   box-sizing: border-box;
 }
 
-input[type=text], select, textarea {
+input[type=text],
+select,
+textarea 
+
+{
   width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
@@ -243,8 +257,34 @@ input[type=submit]:hover {
 
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
-  .col-25, .col-75, input[type=submit] {
+
+  .col-25,
+  .col-75,
+  input[type=submit] {
     width: 100%;
     margin-top: 0;
   }
 }
+/* ====================END OF CONTACT US SETTINGS========================== */
+
+/* Fixed Page Footer Set-up */
+.footer 
+{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+p.companyInfo
+{
+  color: darkorange;
+  text-align: center;
+}
+
+/* Adds a product card */

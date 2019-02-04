@@ -1,7 +1,7 @@
 /* 
     * Author(s): Kiowa Alumno, Troy Peterson, Jo Lee White
     * Creation Date: 01/16/2019
-    * Date Updated: 01/18/2019; 01/19/2019; 01/21/2018; 01/22/2019; 01/23/2019
+    * Date Updated: 01/18/2019; 01/19/2019; 01/21/2018; 01/22/2019; 01/23/2019; 01/30/2019
     * Description: 
 */
 
@@ -79,5 +79,9 @@ router.get('/test', function(req, res, next) {
   res.render('test', { title: '404 test' });
 });
 
+//
+router.get('/indexTest', function(req, res, next) {
+  res.render('indexTest', { title: 'Index Scroll Test' });
+});
 
 module.exports = router;
