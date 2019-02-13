@@ -84,4 +84,9 @@ router.get('/indexTest', function(req, res, next) {
   res.render('indexTest', { title: 'Index Scroll Test' });
 });
 
+//
+router.get('/indexTest2', function(req, res, next) {
+  res.render('indexTest2', { title: 'Index Test' });
+});
+
 module.exports = router;

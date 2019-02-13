@@ -13,21 +13,21 @@ html
 }
 /* ====================END OF HTML SETTINGS========================== */
 
-body
-{
-  /* font-family: "Abel"; */
-  
-}
-
-/* adds a Drop Letter to the first letter 
-of each of the About Us Page paragraphs. */
-.about::first-letter {
+/* adds a Drop Letter to the first letter of each of the About Us Page paragraphs. */
+.about::first-letter
+ {
   float: left;
   font-size: 45px;
   line-height: 1;
   font-weight: bold;
   margin-right: 9px;
   font-family: "Diplomata";
+}
+
+.title
+{ 
+  font-family:"Scope One";
+
 }
 
 /* ====================END OF BODY SETTINGS========================== */
@@ -79,6 +79,7 @@ of each of the About Us Page paragraphs. */
   position: fixed;
   top: 0;
   width: 100%;
+  /* position: sticky; */
 }
 
 .navbar a 
@@ -87,7 +88,7 @@ of each of the About Us Page paragraphs. */
   display: block;
   color: #f2f2f2;
   text-align: center;
-  padding: 14px 16px;
+  padding: 14px;
   text-decoration: none;
   font-size: 17px;
 }
@@ -97,6 +98,11 @@ of each of the About Us Page paragraphs. */
   background: #ddd;
   color: black;
 }
+
+
+/* Navbar TEST */
+
+
 
 /* LIST THAT CONTAINS LINKS and Settings for the Navigation Bar */
 ul 
@@ -148,7 +154,7 @@ li a:hover {
 }
 
 /* CREATES A PRODUCT INFORMATION CARD */
-.card {
+.cardProduct {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   max-width: 300px;
   max-height: 300px;
@@ -181,14 +187,85 @@ li a:hover {
 /* ====================END OF PRODUCT PAGE/SECTION SETTINGS========================== */
 
 /* About Us Page Settings */
-
-.photoID
+#photoID
 {
   width: 200px;
   height: 200px;
   border-radius: 50%;
   /* float: left; */
 }
+
+/*  meet us */
+.cardProfile {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 150px;
+  margin: auto;
+  text-align: center;
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+button:hover, a:hover {
+  opacity: 0.7;
+}
+
+/* stats */
+#oval {
+  width: 200px;
+  height: 100px;
+  background: navy;
+  border-radius: 100px / 50px;
+  color: #ddd;
+}
+
+
+.statID
+{
+  width: 150px;
+  height: 125px;
+  /* opacity: 0.2; */
+  position: relative;
+  /* border-radius: 50%; */
+  /* float: left; */
+}
+
+.container {
+  position: relative;
+  text-align: center;
+}
+
+/* Centered text */
+.centered {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+
 
 
 /* ==============================END OF About US SETTINGS============================= */
@@ -216,7 +293,8 @@ label {
   display: inline-block;
 }
 
-input[type=submit] {
+input[type=submit] 
+{
   background-color: #4CAF50;
   color: white;
   padding: 12px 20px;
@@ -232,23 +310,10 @@ input[type=submit]:hover {
 
 .container {
   border-radius: 5px;
-  background-color: #f2f2f2;
+  /* background-color: #f2f2f2; */
   padding: 20px;
 }
 
-.col-25 {
-  float: left;
-  width: 25%;
-  margin-top: 6px;
-}
-
-.col-75 {
-  float: left;
-  width: 75%;
-  margin-top: 6px;
-}
-
-/* Clear floats after the columns */
 .row:after {
   content: "";
   display: table;
@@ -287,4 +352,6 @@ p.companyInfo
   text-align: center;
 }
 
-/* Adds a product card */
+
+
+/*--------------------------------------------------------------------------------------*/
