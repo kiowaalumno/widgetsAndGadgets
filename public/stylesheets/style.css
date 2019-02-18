@@ -11,10 +11,16 @@ html
 {
   scroll-behavior: smooth;
 }
+
+body
+{
+  /* font-family: "";
+   */
+}
 /* ====================END OF HTML SETTINGS========================== */
 
 /* adds a Drop Letter to the first letter of each of the About Us Page paragraphs. */
-.about::first-letter
+#welcome::first-letter
  {
   float: left;
   font-size: 45px;
@@ -24,10 +30,19 @@ html
   font-family: "Diplomata";
 }
 
-.title
+#title
 { 
-  font-family:"Scope One";
+  /* font-family:"Scope One"; */
+  font-family:"Nobile";
 
+}
+
+#border
+{
+  border:3px; 
+  border-style:solid; 
+  border-color: navy; 
+  padding: 1em;
 }
 
 /* ====================END OF BODY SETTINGS========================== */
@@ -69,7 +84,7 @@ html
   /* black; */
 }
 
-/* ====================END OF HTML SETTINGS========================== */
+/* ====================END OF HTML LINK SETTINGS========================== */
 
 /* NavBar styles -- Horizontal, Fixed and Sticky (stationary)*/
 .navbar 
@@ -205,8 +220,10 @@ li a:hover {
 
 .title {
   color: grey;
+  font
   font-size: 18px;
 }
+
 
 button {
   border: none;
@@ -251,7 +268,7 @@ button:hover, a:hover {
   /* float: left; */
 }
 
-.container {
+.containerA {
   position: relative;
   text-align: center;
 }
@@ -264,9 +281,38 @@ button:hover, a:hover {
   transform: translate(-50%, -50%);
 }
 
+.column 
+{
+  /* width: 100%; */
+  float: left;
+  /* padding: 10px; */
+  height: 300px; /* Should be removed. Only for demonstration */
+}
 
+#columnA 
+{
+  width: 20%;
+}
 
+#columnB
+{
+  width: 80%;
+}
 
+/* Clear floats after the columns */
+/* .row:after  */
+.column:after 
+{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
 
 /* ==============================END OF About US SETTINGS============================= */
 
@@ -308,27 +354,39 @@ input[type=submit]:hover {
   background-color: #45a049;
 }
 
-.container {
+.containerB {
   border-radius: 5px;
   /* background-color: #f2f2f2; */
   padding: 20px;
 }
 
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
 }
 
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
+/* @media screen and (max-width: 600px) 
+{
 
   .col-25,
   .col-75,
   input[type=submit] {
     width: 100%;
     margin-top: 0;
-  }
+  } */
 }
 /* ====================END OF CONTACT US SETTINGS========================== */
 

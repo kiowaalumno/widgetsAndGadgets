@@ -15,7 +15,7 @@
     <title> Welcome to Wag Corp: Home of the Original Wag's Gadget! </title>
 
     <!-- Imports the stylesheets in the application folder -->
-    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <link rel="stylesheet" href="stylesheets/style.css" />
 
     <!-- a stylesheet that contains the import information for all the Google Fonts to add fonts to the web pages -->
     <link rel="stylesheet" href="/stylesheets/fonts.css" />
@@ -31,9 +31,6 @@
         <!-- <div class="main"> -->
 
         <div>
-
-            <div> </div>
-
             <!-- Page Navigation Bar -->
             <!-- This lets the browser know that the link is within the page -->
             <!-- The “#” is still telling the browser to load the same page, except when you include text 
@@ -52,51 +49,58 @@
 
             <br />
             <br />
-            <!-- <br />
-            <br />
-            <br />
-            <br /> -->
+
 
             <!-- Trying out dividing the other pages into sections -->
             <!-- Section 1: Index -->
             <section>
                 <div id="page1">
                     <a id="index" class="smooth"></a>
-                    <h1 class="title"> Welcome Screen </h1>
-                    <p class="about"> Welcome to Wags Corporation <br />              
-                    Welcome to Wag's Corporation the home of the one and only Wag's gadget. Where Our motto is . . .
+                    <!-- <h1 class="title"> Welcome to Wags Corporation </h1> -->
+                    <p class="about"> 
+                        Welcome to Wag's Corporation the home of the one and only Wag's gadget.                         
                         
-                    <i>"where we create carefully crafted gadgets for the savvy shopper."</i>
+                    <br>
 
-                        Welcome to [store name], your number one source for all things [product, ie: shoes, bags, dog treats]. We're dedicated 
-                        to giving you the very best of [product], with a focus on [three characteristics, ie: dependability, customer service 
-                        and uniqueness.]
+                    <p id="border"> <span style="font-family:Special Elite; font-size:20px; margin-left: center; margin-right: auto;">  Welcome to Wag Corporation, 
+                        your number one source for all things gadget related. Where we are always working toward our motto, <i>"where we create carefully crafted 
+                        gadgets for the savvy shopper."</i>  We're dedicated to giving you the very best gadgets and shopping experience with a focus on 
+                        dependability, customer service, and uniqueness.
+                        
+                        <br> <br>
 
-                        Founded in [year] by [founder's name], [store name] has come a long way from its beginnings in a [starting location, ie: 
-                        home office, toolshed, Houston, TX.]. When [store founder] first started out, his/her passion for [passion of founder, 
-                        ie: helping other parents be more eco-friendly, providing the best equipment for his fellow musicians] drove him to [action, 
-                        ie: do intense research, quit her day job], and gave him the impetus to turn hard work and inspiration into to a booming 
-                        online store. We now serve customers all over [place, ie: the US, the world, the Austin area], and are thrilled to be a part
-                        of the [adjective, ie: quirky, eco-friendly, fair trade] wing of the [industry type, ie: fashion, baked goods, watches] industry.
-                        We hope you enjoy our products as much as we enjoy offering them to you. If you have any questions or comments, please don't 
-                        hesitate to contact us.
+                        <!-- Founded in 1980, the Wag Corporation has come a long way from its humble beginnings. When we (Avery Grant and Lennox Stewert) first started  -->
+                        <!-- out, their passion for providing the best gadgets for any budget; drove us into action to do intense research and quit our day jobs. -->
+                        <!-- It gave us the impetus to turn hard work and inspiration into to a booming online store. -->
                         
-                        Sincerely,
-                        Name, [title, ie: CEO, Founder, etc.]
+                        We now serve customers all over and are thrilled to be a part of the exciting and ever-evolving online retail industry. We hope you enjoy our products as much as we enjoy offering them 
+                        to you. If you have any questions or comments, please don't hesitate to contact us.
+                       
+                        <br> <br>
+
+                        Sincerely, </span>
                         
-                    </p>
+                        <br>
+
+                        <span style="font-family:Homemade Apple; font-size: 30px;"> Avery Grant </span>  
+                        <span style="font-family:Special Elite; font-size:20px;"> and </span>
+                        <span style="font-family:Kristi; font-size: 45px;"> Lennox Stewart</span> <br>
+                        <span style="font-family:Special Elite; font-size:20px;"> Wag Corporation Founders </span></p>
 
                     <br /> <br />
                     <a href="/indexTest2"> Back to the Top </a> <br />
 
                     <hr />
+                    <br />
+                    <br />
+
                 </div>
             </section>
 
             <section>
                 <div id="page2">
                     <a id="gadgets" class="smooth"></a>
-                    <h1 style="text-align: center" class="title"> <u>Products and Prices: </u></h1>
+                    <h1 style="text-align: center" id="title"> <u>Products and Prices: </u></h1>
                     <table style="width:100%">
                         <tr class='themed-grid-col'>
                             <th class="cardProduct"> <br />
@@ -133,6 +137,8 @@
                     <a href="/indexTest2"> Back to the Top </a> <br />
 
                     <hr />
+                    <br />
+                    
 
                 </div>
             </section>
@@ -140,21 +146,31 @@
             <section>
                 <div id="page3">
                     <a id="aboutUs" class="smooth"></a>
-                    <table style="width:100%">
-                        <tr class='themed-grid-col'>
-                            <th class="card"></th> <br />
-                            <img class="gadget" src="/images/foodm_05_grayscale.jpg">
-                            WAG Corporation - Their Story <br />
-                            Wag Corporation is a 
-                             <br /> <br />
+                    <div class="row">
+                            <div class="column" id="columnA">
+                              <img src="/images/foodm_05_grayscale.jpg" style="width:200px; height:200px;" />
+                            </div>
 
-                             Taking Care of Business ("T.C.O.B.") Incorporated - Our Story  <img class="gadget" src="/images/7627.jpg" />  <br />
-                             <br /> <br />
-                            </th>
-                            
-                        </tr>
+                            <div class="column" id="columnB"> 
+                                WAG Corporation - Their Story <br />
+                                Founded in 1980, the Wag Corporation has come a long way from its humble beginnings. When Avery Grant and Lennox Stewert,
+                                first started out, their passion for providing the best gadgets for any budget; drove them into action to do intense 
+                                research and quit their day jobs to turn hard work and inspiration into to a booming online store.
+                            </div>
+                    </div>
 
-                    </table>
+                    <div class="row">
+                            <div class="column" id="columnB">
+                                    Taking Care of Business ("T.C.O.B.") Incorporated - Our Story <br />
+                                    Founded in 1980, the Wag Corporation has come a long way from its humble beginnings. When we (Avery Grant and Lennox Stewert) first started 
+                                    out, their passion for providing the best gadgets for any budget; drove us into action to do intense research and quit our day jobs.
+                                    It gave us the impetus to turn hard work and inspiration into to a booming online store. 
+                            </div>
+
+                            <div class="column" id="columnA"> 
+                                <img src="/images/7627.jpg" style="width:200px; height:200px;" />
+                            </div>
+                    </div>
 
                     <table style="margin-left: auto; margin-right: auto">
                         <tr style="width:100% text-align:center"> The "T.C.O.B." Family
@@ -164,7 +180,7 @@
                                 <!--  -->
                                 <div class="card">
                                     <img src="/images/womanSilhouette.jpg" id="photoID">
-                                    <h1>J White</h1>
+                                    <h1 id="title">J White</h1>
                                     <p class="title">Go Between</p>
                                     <a href="https://www.linkedin.com/in/jo-lee-white-5749ab176/"><i class="fa fa-linkedin"></i></a>
                                     <p> <a href="mailto:msjlwhite@gmail.com"> <button> Contact </button> </a> </p>
@@ -174,7 +190,7 @@
                             <td>
                                 <div class="card">
                                     <img src="/images/manSilhouette.jpg" id="photoID">
-                                    <h1>T Peterson</h1>
+                                    <h1 id="title">T Peterson</h1>
                                     <p class="title">Coding Specialist</p>
                                     <a href="https://www.linkedin.com/in/troy-peterson-1383503/"><i class="fa fa-linkedin"></i></a>
                                     <a href="https://www.facebook.com/troy.peterson.1423"><i class="fa fa-facebook"></i></a>
@@ -185,7 +201,7 @@
                             <td>
                                 <div class="card">
                                     <img src="/images/woman silhouette 2.jpg" id="photoID">
-                                    <h1>K Alumno</h1>
+                                    <h1 id="title">K Alumno</h1>
                                     <p class="title">Creative Director</p>
                                     <a href="https://www.linkedin.com/in/kiowaalumno/"><i class="fa fa-linkedin"></i></a>
                                     <a href="https://www.facebook.com/kiowa.pendleton"><i class="fa fa-facebook"></i></a>
@@ -200,22 +216,22 @@
                     <section>
                         <table style="width: 100%">
                             <tr>
-                        <td class="container" id="oval">
+                        <td class="containerA" id="oval">
                             <h4> Projects Completed</h4> <br />
                             <!-- <img class="statID" src="/images/18397.jpg" /> -->
                             <span id="stat" class="centered"> </span> 
                         </td>
-                        <td class="container" id="oval"> 
+                        <td class="containerA" id="oval"> 
                             <h4>Cups of Chocolate Milk/Coffee Consumed</h4> <br />
                             <!-- <img class="statID" src="/images/preview.jpg" /> -->
                             <span id="stat2" class="centered"> </span> 
                         </td>
-                        <td class="container" id="oval">
+                        <td class="containerA" id="oval">
                             <h4>Happy Clients</h4> <br />
                             <span id="stat3" class="centered"> </span>
                             <!-- <img class="statID" src="/images/happy smiley.jpg" /> -->
                         </td>
-                        <td class="container" id="oval"> 
+                        <td class="containerA" id="oval"> 
                             <h4>Lives Changed</h4> <br />
                             <span id="stat4" class="centered"></span> 
                             <!-- <img class="statID" src="/images/red home.jpg" /> -->
@@ -232,9 +248,10 @@
             <section>
                 <div id="page4">
                     <a id="contactUs" class="smooth"></a>
-                    <h1 class="title"> You Have Questions . . We have answers! </h1>
-                    <h2>Contact Us - Rain or Shine, if you have a question or problem, please dont hesitate to drop us a line. </h2>
-                    <div class="container">
+                    <!-- <h1 id="title">  </ff> -->
+                    <h2>You Have Questions . . Well We Have A Answers! So Contact Us . . . <br>
+                        Rain or Shine, if you have a question or problem, please dont hesitate to drop us a line. </h2>
+                    <div class="containerB" >
                         <form action="/action_page.php">
                             <div class="row">
                                 <div class="col-25">
@@ -249,6 +266,7 @@
                                     <label for="lname">Last Name</label>
                                 </div>
                                 <div class="col-75">
+                                    <input type="text" id="Lname" name="lastname" placeholder="Your last name..">
                                 </div>
                             </div>
                             <div class="row">
