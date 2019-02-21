@@ -7,21 +7,19 @@
 */
 
 /* controls the scrolling animation for the page */
-html
-{
+html {
   scroll-behavior: smooth;
 }
 
-body
-{
+body {
   /* font-family: "";
    */
 }
+
 /* ====================END OF HTML SETTINGS========================== */
 
 /* adds a Drop Letter to the first letter of each of the About Us Page paragraphs. */
-#welcome::first-letter
- {
+#welcome::first-letter {
   float: left;
   font-size: 45px;
   line-height: 1;
@@ -30,37 +28,35 @@ body
   font-family: "Diplomata";
 }
 
-#title
-{ 
+#title {
   /* font-family:"Scope One"; */
-  font-family:"Nobile";
-
+  font-family: "Nobile";
+  text-align: center;
 }
 
-#border
-{
-  border:3px; 
-  border-style:solid; 
-  border-color: navy; 
+/* border to make the welcome seemed like at typed letter . . .  */
+#border {
+  border: 3px;
+  border-style: solid;
+  border-color: navy;
   padding: 1em;
 }
 
 /* ====================END OF BODY SETTINGS========================== */
 
-.bg-image
-{
+.bg-image {
   background-image: url("/images/5816.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  /* opacity: 8px; */
+
 }
+
 /* ====================END OF BACKGROUND IMAGE SETTINGS========================== */
 
 
 /*  Error Message Screen/Page Properties */
-.err-image 
-{
+.err-image {
   background-image: url('/images/283331-P6EPD6-923.jpg');
   /* height: 465px;
   width: 333px; */
@@ -69,64 +65,65 @@ body
   height: 100%;
   size: 100%;
 
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 
-  border-radius: 50%; */
+  border-radius: 50%;
+  */
 }
+
 /* ====================END OF 404 MESSAGE SETTINGS========================== */
 
-/*  Internal and External Link Set Up */a 
-{
-  color: gray; 
+/*  Internal and External Link Set Up */
+#a {
+  color: gray;
   /* black; */
 }
 
 /* ====================END OF HTML LINK SETTINGS========================== */
 
 /* NavBar styles -- Horizontal, Fixed and Sticky (stationary)*/
-.navbar 
-{
+.navbar {
   overflow: hidden;
   background-color: #333;
   position: fixed;
   top: 0;
+  left: 0;
   width: 100%;
-  /* position: sticky; */
 }
 
-.navbar a 
-{
+.navbar a {
   float: left;
   display: block;
   color: #f2f2f2;
   text-align: center;
   padding: 14px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 16px;
 }
 
-.navbar a:hover 
-{
+.navbar a:hover {
   background: #ddd;
   color: black;
 }
 
-
-/* Navbar TEST */
-
-
-
 /* LIST THAT CONTAINS LINKS and Settings for the Navigation Bar */
-ul 
-{
+#ulBar {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
   background-color: navy;
+}
+
+#ulReg {
+  list-style-type: circle;
+  margin: 30px;
+  padding: 15px;
+  /* overflow: hidden; */
+  /* background-color: navy; */
 }
 
 li {
@@ -145,8 +142,7 @@ li a:hover {
   background-color: #111;
 }
 
-.active 
-{
+.active {
   background-color: grey;
 }
 
@@ -161,11 +157,10 @@ li a:hover {
 }
 
 /* Product Section Image settings */
-.gadget 
-{
+.gadget {
   width: 100px;
   height: 100px;
-  border-radius: 50%;  
+  border-radius: 50%;
 }
 
 /* CREATES A PRODUCT INFORMATION CARD */
@@ -202,8 +197,7 @@ li a:hover {
 /* ====================END OF PRODUCT PAGE/SECTION SETTINGS========================== */
 
 /* About Us Page Settings */
-#photoID
-{
+#photoID {
   width: 200px;
   height: 200px;
   border-radius: 50%;
@@ -211,21 +205,24 @@ li a:hover {
 }
 
 /*  meet us */
-.cardProfile {
+.cardProfile
+
+/* Left  */
+{
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 150px;
+  max-width: 200px;
+  /* max-height: 300px; */
   margin: auto;
   text-align: center;
+  position: relative;
+  /* position: fixed; */
+  /* position: absolute; */
+  /* position: initial; */
+  /* overflow: hidden; */
 }
 
-.title {
-  color: grey;
-  font
-  font-size: 18px;
-}
-
-
-button {
+button 
+{
   border: none;
   outline: 0;
   display: inline-block;
@@ -238,15 +235,55 @@ button {
   font-size: 18px;
 }
 
-a {
+a 
+{
   text-decoration: none;
   font-size: 22px;
   color: black;
 }
 
-button:hover, a:hover {
+button:hover,
+a:hover {
   opacity: 0.7;
 }
+
+/* contact us additional information test */
+.overlay                                                     
+
+/* Left  */
+{
+  /* position: sticky; */
+  /* position: fixed; */
+  position: absolute;
+  /* position: relative; */
+  bottom: 31%;
+  left: 0;
+  right: 0;
+  background-color: #008CBA;
+  /* navy; */
+  overflow: hidden;
+  width: 0;
+  height: 69%;
+  transition: .5s ease;
+}
+
+.cardProfile:hover .overlay 
+{
+  width: 100%;
+}
+
+.text {
+  color: white;
+  font-size: 12px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  /* white-space: nowrap; */
+}
+
 
 /* stats */
 #oval {
@@ -257,15 +294,10 @@ button:hover, a:hover {
   color: #ddd;
 }
 
-
-.statID
-{
+.statID {
   width: 150px;
   height: 125px;
-  /* opacity: 0.2; */
   position: relative;
-  /* border-radius: 50%; */
-  /* float: left; */
 }
 
 .containerA {
@@ -281,52 +313,55 @@ button:hover, a:hover {
   transform: translate(-50%, -50%);
 }
 
-.column 
-{
-  /* width: 100%; */
+/* +++++++++++++++++++++++++++++++++++++++++++++ */
+
+/* Float four columns side by side */
+.column {
   float: left;
-  /* padding: 10px; */
-  height: 300px; /* Should be removed. Only for demonstration */
+  width: 25%;
+  padding: 0 10px;
 }
 
-#columnA 
-{
-  width: 20%;
-}
-
-#columnB
-{
-  width: 80%;
+/* Remove extra left and right margins, due to padding */
+.row {
+  margin: 0 -5px;
 }
 
 /* Clear floats after the columns */
-/* .row:after  */
-.column:after 
-{
+.row:after {
   content: "";
   display: table;
   clear: both;
 }
 
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+/* Responsive columns */
 @media screen and (max-width: 600px) {
   .column {
     width: 100%;
+    display: block;
+    margin-bottom: 20px;
   }
+}
+
+/* Style the counter cards */
+.cardCol {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+
 
 /* ==============================END OF About US SETTINGS============================= */
 
 /* ContactUs Page CSS */
-* 
-{
+* {
   box-sizing: border-box;
 }
 
 input[type=text],
 select,
-textarea 
-
-{
+textarea {
   width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
@@ -339,8 +374,7 @@ label {
   display: inline-block;
 }
 
-input[type=submit] 
-{
+input[type=submit] {
   background-color: #4CAF50;
   color: white;
   padding: 12px 20px;
@@ -360,11 +394,11 @@ input[type=submit]:hover {
   padding: 20px;
 }
 
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
 .col-25 {
   float: left;
@@ -377,39 +411,25 @@ input[type=submit]:hover {
   width: 75%;
   margin-top: 6px;
 }
-/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-/* @media screen and (max-width: 600px) 
-{
 
-  .col-25,
-  .col-75,
-  input[type=submit] {
-    width: 100%;
-    margin-top: 0;
-  } */
-}
 /* ====================END OF CONTACT US SETTINGS========================== */
 
 /* Fixed Page Footer Set-up */
-.footer 
-{
+#footer {
   position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
-  text-align: center;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-}
-
-p.companyInfo
-{
-  color: darkorange;
+  background-color: red;
+  color: white;
   text-align: center;
 }
 
 
+p.companyInfo {
+  color: navy;
+  text-align: center;
+  font-size: 18px;
+}
 
 /*--------------------------------------------------------------------------------------*/
