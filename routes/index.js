@@ -89,4 +89,16 @@ router.get('/indexTest2', function(req, res, next) {
   res.render('indexTest2', { title: 'Index Test' });
 });
 
+//
+router.get('/indexTest3', function(req, res, next) {
+  res.render('indexTest3', { title: 'Index Test' });
+});
+
+
+// Pulls up the Shopping Cart with or without items that the customer wants to order.
+router.get('/cart3', function(req, res, next) {
+  res.render('cart3', { title: 'Shopping Cart' });
+});
+
+
 module.exports = router;
